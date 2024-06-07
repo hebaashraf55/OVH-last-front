@@ -10,7 +10,6 @@
 }
 
 *{
-    font-family: 'Plus Jakarta Sans';
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -23,12 +22,16 @@
     width: 100%;
     background-color: var(--light-blue);
 }
+
 .navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 1rem 5rem;
     font-weight: 200;
+}
+.navbar .menu-icon{
+    display: none;
 }
 .navbar:first-child {
     border-bottom: 1px solid #ddd;
@@ -123,6 +126,9 @@
     padding: .5rem;
 }
 
+
+
+
 /* main section */ 
 .main-section {
     display: flex;
@@ -184,6 +190,7 @@
     max-width: 100%;
     border-radius: 10px;
 }
+
 /* section 2 */
 .photo-section {
     padding: 50px 20px;
@@ -215,6 +222,9 @@
     padding: 50px;
     margin: 4rem auto;
 }
+/* .about-section .photo{
+     transform: rotateY(60deg); 
+} */
 .about-section .text-content {
     flex: 1;
     padding-right: 20px;
@@ -256,7 +266,6 @@
 .about-section .text-content ul li i{
     color: #007bff;
     margin: .5rem;
-    
     border-radius: 50%;
 }
 
@@ -335,7 +344,7 @@
     padding: 3rem 2rem;
     align-items: center;
     border-radius: 1rem;
-    /* border-right: solid 2px black;  */
+   
     box-shadow: 0 4px 8px rgba(80, 80, 80, 0.2);
 }
 .photo-gallery {
@@ -346,18 +355,12 @@
 .photo-gallery img {
     max-width: 22%;
     border-radius: 10px;
-    
 }
+
 
 /* section 6 animation section */
 .cards-animation-section {
-    /* width: 80%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 50px 20px;
-    margin: 2rem auto;
-    position: relative; */
+
     padding: 50px 20px;
     position: relative;
     text-align: center;
@@ -451,22 +454,23 @@
     display: flex;
     width: 90%;
     height: auto;
-    margin: 4rem auto;
+    margin: 5rem auto;
     padding: 50px 50px;
     align-items: center;
+    justify-content: space-between;
     background-color: var(--second-blue);
-    border-radius: 3rem;
+    border-radius: 20px;
     position: relative;
 }
 .book-section .text-content { 
     width: 50%;
-    margin: 2rem ;
+    margin: 2rem ; 
     padding-right: 20px;
-    /* font-size: 25px;    */
+    font-size: 25px;   
 }
 .book-section .text-content h5 {
     color: var(--orang);
-    margin: 2rem 0;
+    margin: 1rem 0;
 }
 .book-section .text-content h1 {
     margin: 2rem 0;
@@ -518,23 +522,24 @@
     background: #EFF6FF;
     font-family: 'Source Serif Pro';
     padding-bottom: 2rem;
+    margin: 3rem 0;
 }
 
 .main-section-rating .text-section {
     flex: 1;
     margin: 2rem 2rem;
-    line-height: 1.5;
+    line-height: 1.6;
 
 }
 .main-section-rating .text-section h5{
     color: var(--orang);
     margin : 1rem auto;
     font-size: 20px;
-    font-family: 'Plus Jakarta Sans';
 }
 .main-section-rating .text-section h2{
     color: var(--black);
-    font-size: 25px;
+    font-size: 31px;
+    font-weight: 600;
 
 }
 .main-section-rating .text-section span{
@@ -600,7 +605,7 @@
 }
 
 .rating-stars::before {
-    content: "★★★★★"; 
+    content: "★★★"; 
     letter-spacing: 5px;
     color: var(--orang);
 }
@@ -895,5 +900,15 @@
 .footer-column ul li a:hover {
     text-decoration: underline;
 }
+
+
+
+
+
+
+
+
+
+
 
 

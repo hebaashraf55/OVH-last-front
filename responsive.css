@@ -1,0 +1,172 @@
+
+
+
+/* header section responsive */
+
+
+
+@media screen and (max-width: 600px) {
+    .left, .right {
+        display: flex;
+        align-items: center;
+    }
+
+    .right {
+        flex-direction: column;
+        align-items: flex-end;
+        display: none;
+    }
+    .menu-icon {  
+        display: flex; 
+        order: -1;
+    }
+
+    .nav-item {
+        display: none;
+        margin-bottom: 10px;
+    }
+
+    .nav-item.button {
+        margin-bottom: 0;
+    }
+    .second-navbar{
+        display: none;
+    }
+
+
+}
+
+
+
+
+/* Responsive Main Section  */
+@media (min-width: 768px) {
+    .main-section {
+        flex-direction: column; /* Change back to column layout */
+        align-items: center;
+    }
+
+    .text-content,
+    .photo {
+        width: 50%;
+        text-align: center;
+        margin-bottom: 0;
+    }
+
+    .photo {
+        order: -1; /* Change the order of photo */
+    }
+}
+
+
+/* Responsive Photo Section 1 */
+@media (max-width: 768px) {
+    .photo-gallery img:nth-of-type(n+4) {
+        display: none;
+    }
+}
+/* Responsive Cards Section 2 */
+@media (max-width: 768px) {
+    .cards {
+        flex-direction: column;
+        align-items: center;
+    }
+    .card {
+        width: 90%;
+        margin-bottom: 20px;
+    }
+}
+
+/* Responsive about us section 3*/
+@media (max-width: 768px){
+    .about-section{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .about-section .text-content{
+        max-width: 100%;
+        margin-top: 1rem;
+    }
+}
+
+/* Section 4 responsive  */
+
+@media (max-width: 768px) {
+    .cards {
+        flex-direction: column;
+        align-items: center;
+    }
+    .card:first-of-type {
+        width: 90%;
+    }
+    .card:nth-child(n + 2) {
+        width: 45%;
+    }
+}
+/* Responsive Cards Animation Section 6 */
+@media (max-width: 768px) {
+    .cards-animation-section .cards-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    .cards-animation-section .card {
+        width: 90%;
+        padding-bottom: 90%; /* Maintains square aspect ratio */
+        margin-bottom: 30px;
+    }
+    .cards-animation-section .arrow {
+        display: none;
+    }
+}
+
+
+
+
+/* section 7 */
+@media (max-width: 768px) {
+    .book-section {
+        flex-direction: column-reverse; /* Stack items in reverse order (text above photo) */
+    }
+
+    .text-content {
+        padding-right: 0;
+        padding-bottom: 2rem; /* Add spacing between text and photo */
+    }
+
+    .photo {
+        margin-top: 2rem;
+    }
+}
+
+
+
+
+/* Responsive Footer */
+@media (max-width: 768px) {
+    .footer-top {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .footer-left, .footer-right {
+        width: 100%;
+    }
+    .footer-left {
+        align-items: flex-start;
+    }
+    .social-media {
+        justify-content: flex-start;
+    }
+    .footer-right {
+        flex-direction: column;
+    }
+    .working-hours, .footer-links {
+        width: 100%;
+    }
+    .footer-links {
+        flex-direction: column;
+    }
+    .footer-column {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}
